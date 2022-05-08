@@ -1,10 +1,10 @@
-const mongoose =require('mongoose')
+const mongoose = require('mongoose')
 
-mongoose.connect("mongodb://localhost:27017/ShikhaData",{
-    
-}).then(() =>{
+mongoose.connect("mongodb+srv://shikha:<password>@cluster0.qbq7i.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {
+
+}).then(() => {
     console.log(`Connection Successful`);
-}).catch((e) =>{
+}).catch((e) => {
     console.log(`No connection`);
 })
 
